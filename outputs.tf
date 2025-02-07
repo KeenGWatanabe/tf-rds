@@ -20,3 +20,7 @@ output "database_port" {
   value = aws_db_instance.roger_db.port
 }
 
+output "aws_iam_policy" {
+  description = "aws_iam_policy_arn"
+  value = aws_iam_policy.rds_access_policy.arn  
+}
